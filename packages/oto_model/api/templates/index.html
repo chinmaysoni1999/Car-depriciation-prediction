@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function populate(s1,s2){
+	var s1 = document.getElementById(s1);
+	var s2 = document.getElementById(s2);
+	s2.innerHTML = "";
+	if(s1.value == "ford"){
+		var optionArray = ['--SELECT--','ecosport', 'figo'];
+	} else if(s1.value == "honda"){
+		var optionArray = ['--SELECT--','amaze', 'mobilio', 'jazz', 'brio', 'city'];
+	}
+    else if(s1.value == "hyundai"){
+            var optionArray = ['--SELECT--','i10', 'eon', 'i20', 'creta', 'xcent', 'grand i10', 'santro xing', 'verna', 'i20 active', 'elite i20'];
+        }
+    else if(s1.value == "mahindra"){
+            var optionArray = ['--SELECT--','tuv300', 'xuv500', 'scorpio'];
+        }
+    else if(s1.value == "maruti suzuki"){
+            var optionArray = ['--SELECT--','s-cross', 'ertiga', 'eeco', 'alto k10', 'baleno', 'a-star', 'omni', 'alto 800', 'wagon r 1.0', 'ritz', 'stingray', 'swift', 'swift dzire', 'sx4', 'alto', 'celerio', 'ciaz', 'wagon r'];
+        }
+    else if(s1.value == "renault"){
+            var optionArray = ['--SELECT--','duster', 'kwid'];
+        }
+    else if(s1.value == "skoda"){
+            var optionArray = ['--SELECT--','rapid'];
+        }
+    else if(s1.value == "tata"){
+        var optionArray = ['--SELECT--','tiago'];
+    }
+    else if(s1.value == "toyota"){
+        var optionArray = ['--SELECT--','etios', 'innova', 'etios liva'];
+    }
+    else if(s1.value == "volkswagen"){
+        var optionArray = ['--SELECT--','polo', 'vento'];
+    }
+	for(var option in optionArray){
+		var newOption = document.createElement("option");
+		newOption.value = optionArray[option];
+		newOption.innerHTML = optionArray[option];
+		s2.options.add(newOption);
+	}
+}
+    function populate12(s2,s3){
+	    var s2 = document.getElementById(s2);
+        var s3 = document.getElementById(s3);
+        s3.innerHTML = "";
+        if(s2.value == "beat" ){
+		var optionArray1 = ['--SELECT--','lt lpg', 'ps diesel', 'ls petrol', 'lt o diesel', 'lt petrol', 'ls diesel', 'ps petrol', 'lt diesel'];
+	} else if(s2.value == "ecosport"){
+		var optionArray1 = ['--SELECT--','trend 1.5l ti-vct', 'trend + 1.5l ti-vct at', 'trend 1.5l tdci', 'titanium 1.5l ti-vct at', 'titanium 1.5l tdci black edition', 'titanium 1.5 tdci (o)', 'ambiente 1.5l ti-vct', 'platinum edition petrol', 'titanium 1.5l tdci', 'titanium + 1.5l ti-vct at', 'titanium 1.5l ti-vct black edition at', 'titanium 1.5l ti-vct', 'ambiente 1.5l tdci', 'titanium 1.0 ecoboost', 'titanium + 1.5l ti-vct', 'titanium + 1.5l tdci', 'titanium 1.5l ti-vct black edition'];
+	} else if(s2.value == "figo"){
+		var optionArray1 = ['--SELECT--','titanium plus 1.2 ti-vct', 'titanium plus 1.5 tdci', 'duratorq diesel exi 1.4', 'titanium 1.2 ti-vct', 'base 1.2 ti-vct', 'titanium1.5 tdci', 'duratorq diesel titanium 1.4', 'trend 1.5l tdci', 'trend plus 1.2 ti-vct', 'trend 1.2 ti-vct', 'duratec petrol exi 1.2', 'duratec petrol zxi 1.2', 'duratec petrol lxi 1.2', 'titanium 1.5 ti-vct at', 'duratec petrol titanium 1.2', 'titanium 1.2 ti-vct o', 'duratorq diesel lxi 1.4', 'duratorq diesel zxi 1.4', 'titanium 1.5 tdci sports edition'];
+	}
+    else if(s2.value == "amaze"){
+            var optionArray1 = ['--SELECT--','1.5 e i-dtec', '1.2 s plus i-vtec', '1.5 vx o i-dtec', '1.2 vx o i-vtec', '1.5 ex i-dtec', '1.5 vx i-dtec', '1.2 vx at i-vtec', '1.2 s at i-vtec', '1.2 vx i-vtec', '1.2 e i-vtec', '1.5 s i-dtec', 'pride edition diesel', '1.2 s i-vtec o', 'privilege edition petrol', '1.2 ex i-vtec', '1.5 sx i-dtec', '1.2 s i-vtec'];
+        }
+    else if(s2.value == "brio"){
+            var optionArray1 = ['--SELECT--','s mt', 'vx at', 'vx mt', 'ex mt', 'v at', 'vx o mt', 'v mt', 'vx o at', 'e mt'];
+        }
+    else if(s2.value == "city"){
+            var optionArray1 = ['--SELECT--','vx cvt petrol', '1.5 v at sunroof', 'zx cvt petrol', 'vx o mt diesel', '1.5 v at exclusive', 'anniversary edition diesel', 'sv diesel', 'v diesel', 'vx petrol', '1.5 v at', 'v mt cng compatible', 'v petrol', '1.5 s at', 'v at avn', 'e', 'vx diesel', 'v mt avn', '1.5 v mt sunroof', 'vx o mt', '1.5 v mt exclusive', 'v cvt petrol', 'sv cvt', 'zx diesel', 's petrol', 's diesel', '1.5 corporate mt', 'sv petrol', 'e diesel'];
+        }
+    else if(s2.value == "jazz"){
+            var optionArray1 = ['--SELECT--','s diesel', 's at petrol', 'vx diesel', 'sv petrol', 'sv diesel', 'v diesel', 'active', 'vx petrol', 'mode', 'v petrol', 's petrol', 'x', 'select', 'v at petrol'];
+        }
+    else if(s2.value == "mobilio"){
+            var optionArray1 = ['--SELECT--','s diesel', 'e petrol', 'v o diesel', 'v diesel', 'v o petrol', 'e diesel', 'v petrol', 's petrol'];
+        }
+    else if(s2.value == "creta"){
+        var optionArray1 = ['--SELECT--','sx plus 1.6 crdi dual tone', '1.6 sx plus petrol', '1.6 sx crdi', 'crdi 1.4 e plus', '1.4 s crdi', 'sx 1.6 at petrol', '1.6 sx plus at petrol', 'sx plus 1.6 dual tone petrol', '1.4 s plus crdi'];
+    }
+    else if(s2.value == "elite i20"){
+        var optionArray1 = ['--SELECT--','sportz 1.4 special edition', 'asta o 1.2', 'magna executive 1.4 crdi', 'magna 1.4 crdi', 'sportz 1.2 o', 'asta 1.4 o crdi', 'magna executive 1.2 at', 'asta 1.2 dual tone', 'sportz 1.2 special edition', 'era 1.4 crdi', 'magna 1.2', 'asta 1.4 crdi', 'era 1.2', 'magna executive 1.2', 'sportz 1.2', 'sportz 1.4 o', 'asta 1.2', 'sportz 1.4 crdi'];
+    }
+    else if(s2.value == "eon"){
+        var optionArray1 = ['--SELECT--','magna + lpg', 'd lite', '1.0 kappa magna o airbag', '1.0 kappa magna plus', 'd-lite + airbag', 'magna', '1.0 kappa magna airbag', 'sportz', 'era + lpg', 'era +', 'magna + airbag', 'd lite +', 'magna + se', 'magna +', 'magna o', '1.0 kappa era +', 'd lite + lpg', 'era + airbag'];
+    }
+    else if(s2.value == "grand i10"){
+        var optionArray1 = ['--SELECT--','sportz 1.2 kappa vtvt dual tone', 'sports edition 1.2 kappa vtvt', 'magna u2 1.2 crdi', 'era 1.2 kappa vtvt', 'sportz at 1.2 kappa vtvt', 'era 1.1 crdi', 'magna 1.0 kappa vtvt lpg', 'sportz 1.2 kappa vtvt', 'asta 1.2 kappa vtvt', 'sportz u2 1.2 crdi', 'asta 1.1 crdi o', 'sportz 1.1 crdi', 'magna 1.1 crdi', 'asta 1.2 kappa vtvt o', 'sportz o at 1.2 kappa vtvt', 'asta u2 1.2 crdi', 'magna 1.2 kappa vtvt', 'asta at 1.2 kappa vtvt', 'sports edition 1.1 crdi', 'sportz o 1.2 kappa vtvt', 'sportz o u2 1.2 crdi', 'era u2 1.2 crdi', 'magna at 1.2 kappa vtvt', 'asta 1.1 crdi'];
+    }
+    else if(s2.value == "i10"){
+        var optionArray1 = ['--SELECT--','asta 1.2 with sunroof', 'sportz 1.2 kappa 2 o', '1.2 l kappa magna special edition', 'sportz 1.2 at', 'magna 1.1 irde2', 'magna', 'asta 1.2', 'magna 1.2', 'magna 1.2 at', 'sportz 1.1 irde2', 'magna 1.1 lpg', 'sportz 1.2 kappa 2', 'era 1.1 irde2', 'sportz 1.2', 'sportz 1.1 lpg', 'magna o', 'era 1.1 lpg', 'era', 'asta 1.2 at with sunroof'];
+    }
+    else if(s2.value == "i20"){
+        var optionArray1 = ['--SELECT--','sportz 1.2 o', 'magna 1.4 crdi', 'magna o 1.2', 'sportz 1.4 crdi 6 speed bs-iv', 'sportz 1.4 crdi 6 speed o', 'era 1.4 crdi 6 speed bs-iv', 'magna 1.2', 'asta 1.4 crdi', 'asta 1.4 at o with sunroof', 'asta 1.4 at with avn', 'asta 1.4 crdi with avn 6 speed', 'asta 1.2 o', 'magna o 1.4 crdi', 'era 1.2', 'asta 1.4 at', 'sportz 1.2', 'asta 1.2', 'asta 1.4 crdi 6 speed', 'era 1.4 crdi', 'sportz at 1.4', 'sportz 1.4 crdi', 'asta 1.2 with avn', 'asta 1.2 o with sunroof', 'asta 1.4 crdi with avn', 'magna 1.4 crdi 6 speed'];
+    }
+    else if(s2.value == "i20 active"){
+        var optionArray1 = ['--SELECT--','1.4', '1.4 sx dual tone', '1.2 s', '1.4 s', '1.2 sx', '1.4 sx o', '1.4 sx'];
+    }
+    else if(s2.value == "santro xing"){
+        var optionArray1 = ['--SELECT--','gl', 'gls', 'gls cng', 'gl plus lpg', 'gl cng', 'gls lpg', 'gl plus', 'gl lpg'];
+    }
+    else if(s2.value == "verna"){
+        var optionArray1 = ['--SELECT--','xi', '1.4 vtvt', 'xi abs', '1.6 crdi ex', '1.6 vtvt sx', '1.6 vtvt sx at', '1.6 vtvt s', 'fluidic 1.6 vtvt', '1.6 crdi sx', '1.6 vtvt sx o', 'vtvt 1.6', 'crdi vgt 1.5', '1.4 vtvt ex', '1.6 crdi sx o', '1.6 crdi ex at', '1.6 vtvt ex at', '1.4 crdi', 'fluidic 1.4 crdi ex', 'fluidic 1.6 crdi', 'fluidic 1.4 vtvt cx', 'vgt crdi sx', '1.6 crdi sx o at', '1.6 vtvt ex', '1.6 crdi s', 'vgt crdi abs', 'fluidic 1.4 crdi cx', 'vgt crdi', 'crdi vgt sx 1.5', 'vgt crdi sx abs', '1.6 vtvt sx o at', '1.6 vtvt e', '1.6 vtvt s at', '1.6 crdi sx plus at'];
+    }
+    else if(s2.value == "xcent"){
+        var optionArray1 = ['--SELECT--','e', 's 1.1 crdi', 'sx crdi o', 'e plus', 'sx o', 'sx 1.1 crdi o', 's 1.2 o', 'sx', 's abs 1.2', 'sx crdi', 'sx at 1.2 o', 'e plus crdi', 's 1.1 crdi o', 'e crdi', 'base abs 1.2', 's crdi', 's', 's 1.2 special edition'];
+    }
+    else if(s2.value == "kuv100"){
+        var optionArray1 = ['--SELECT--','k6plus d 5 str', 'k8 5 str', 'k8 d 6 str dual tone', 'k4plus d 6 str', 'k6 d 5 str', 'k8 6 str dual tone', 'k4 6 str', 'k6 5 str', 'k6plus d 6 str', 'k4 5 str', 'k6 d 6 str', 'k2plus d 6 str', 'k4 d 6 str', 'k8 d 6 str', 'k6 6 str', 'k4 d 5 str', 'k8 6 str', 'k8 d 5 str', 'k2 6 str'];
+    }
+    else if(s2.value == "scorpio"){
+        var optionArray1 = ['--SELECT--','vlx 4wd airbag bs-iv', 'vls 2.2 mhawk', 's4 intelli-hybrid', 's6 plus', 'vlx 2wd abs at bs-iii', 'lx bs-iv', 'vlx 4wd abs at bs-iii', 's8', 'sle bs-iv', 'vlx special edition bs-iv', 'vlx 2wd airbag bs-iv', 'vlx 2wd at bs-iv', 'lx 4wd bs-iv', 'vlx 4wd airbag at bs-iv', 'sle 2.6 crde', 's4 plus', 's4 1.99', 'vlx 2wd airbag special edition bs-iv', 'm2di', 's10 1.99', 's4 plus 1.99', 'vlx 4wd bs-iv', 's2', 's8 1.99', 's10 1.99 intelli-hybrid', 'ex', 'vlx 4wd at bs-iv', 's10 4wd', 's4 plus intelli-hybrid', 'vlx 2wd bs-iv', 's4', 's6', 's4 plus 4wd 1.99'];
+    }
+    else if(s2.value == "tuv300"){
+        var optionArray1 = ['--SELECT--','t6 plus', 't8 amt mhawk 100', 't4', 't8 amt', 't6', 't6 plus amt', 't10 amt dual tone', 't8', 't4 plus', 't8 mhawk 100'];
+    }
+    else if(s2.value == "xuv500"){
+        var optionArray1 = ['--SELECT--','w6 1.99', 'w4', 'w6', 'w8 awd 2013', 'xclusive (driver power seat)', 'w4 1.99', 'w8', 'w6 at', 'w8 2013', 'sportz ltd', 'w6 2013'];
+    }
+    else if(s2.value == "a-star"){
+        var optionArray1 = ['--SELECT--','zxi o', 'vxi at', 'vxi abs at', 'zxi', 'vxi', 'lxi'];
+    }
+    else if(s2.value == "alto"){
+        var optionArray1 = ['--SELECT--','lxi bs-iv', 'lxi cng', 'lx bs-iv', 'lx cng'];
+    }
+    else if(s2.value == "alto 800"){
+        var optionArray1 = ['--SELECT--','vxi airbag', 'lxi airbag', 'lxi cng', 'lxi o', 'std cng', 'lx cng', 'lxi cng o', 'lx', 'vxi o', 'lxi anniversary edition', 'vxi', 'lxi cng airbag', 'lxi', 'std'];
+    }
+    else if(s2.value == "alto k10"){
+        var optionArray1 = ['--SELECT--','lxi airbag', 'lxi cng', 'lx', 'vxi amt', 'vxi o', 'vxi', 'lxi cng airbag', 'vxi amt airbag', 'lxi'];
+    }
+    else if(s2.value == "baleno"){
+        var optionArray1 = ['--SELECT--','zeta 1.2', 'delta at 1.2', 'zeta at 1.2', 'zeta 1.3', 'sigma 1.2', 'alpha 1.3', 'sigma 1.3', 'delta 1.2', 'rs 1.0', 'delta 1.3', 'alpha 1.2'];
+    }
+    else if(s2.value == "celerio"){
+        var optionArray1 = ['--SELECT--','vdi', 'vxi o amt', 'zxi o', 'zxi amt abs', 'zxi amt', 'lxi amt abs', 'lxi amt', 'vdi abs', 'vxi cng o', 'zdi o', 'vxi amt', 'ldi', 'zxi', 'vxi amt abs', 'vxi cng', 'zdi', 'vxi', 'vxi abs', 'lxi'];
+    }
+    else if(s2.value == "ciaz"){
+        var optionArray1 = ['--SELECT--','vdi plus', 'zxi o', 'vdi', 'delta 1.4 mt', 'alpha 1.4 at', 'sigma 1.4 mt', 'zdi o', 'zdi shvs', 'vxi', 'alpha 1.4 mt', 's 1.3 hybrid', 'sigma 1.3 hybrid', 'zxi', 'vdi shvs', 'zeta 1.3 hybrid', 'alpha 1.3 hybrid', 'zdi', 'vdi o shvs', 'zeta 1.4 mt', 's 1.4 mt', 'delta 1.3 hybrid', 'zeta 1.4 at', 'vxi o', 'zxi at'];
+    }
+    else if(s2.value == "eeco"){
+        var optionArray1 = ['--SELECT--','5 str', '7 str', '5 str with htr cng', '5 str with a/c+htr cng'];
+    }
+    else if(s2.value == "ertiga"){
+        var optionArray1 = ['--SELECT--','ldi shvs o', 'vdi', 'ldi shvs', 'lxi cng', 'lxi o', 'zdi plus shvs', 'vxi at', 'ldi', 'zdi shvs', 'zxi', 'zdi', 'vxi cng', 'vxi', 'vdi shvs', 'vxi abs', 'lxi'];
+    }
+    else if(s2.value == "omni"){
+        var optionArray1 = ['--SELECT--','e 8 str bs-iv', 'cargo bs iv', 'cng', '5 str bs-iv'];
+    }
+    else if(s2.value == "ritz"){
+        var optionArray1 = ['--SELECT--','lxi bs-iv', 'vxi at bs-iv', 'zxi bs-iv', 'genus vxi', 'vxi abs bs-iv', 'vdi abs bs-iv', 'genus vdi', 'ldi bs-iv', 'vxi bs-iv', 'vdi bs-iv', 'zdi bs-iv'];
+    }
+    else if(s2.value == "s-cross"){
+        var optionArray1 = ['--SELECT--','zeta 1.3', 'alpha 1.6', 'alpha 1.3', 'zeta 1.6', 'sigma 1.3', 'delta 1.6', 'delta 1.3'];
+    }
+    else if(s2.value == "stingray"){
+        var optionArray1 = ['--SELECT--','vxi amt o', 'vxi amt', 'vxi o', 'vxi', 'lxi'];
+    }
+    else if(s2.value == "swift"){
+        var optionArray1 = ['--SELECT--','vxi 1.2 bs-iv', 'vdi', 'limited edition petrol', 'lxi o', 'ldi abs', 'zxi 1.2 bs-iv', 'vdi abs', 'zxi + amt', 'ldi', 'vxi 1.2 abs bs-iv', 'zdi', 'zxi', 'lxi abs o', 'limited edition diesel', 'vxi', 'vxi abs', 'glam', 'lxi'];
+    }
+    else if(s2.value == "swift dzire"){
+        var optionArray1 = ['--SELECT--','vxi 1.2 bs-iv', 'vdi', 'lxi o', 'ldi abs', 'zxi 1.2 bs-iv', 'vdi abs', 'regal ltd', 'vxi at', 'ldi', 'automatic', 'zdi', 'zxi', 'vxi at abs', 'vxi', 'vxi abs', 'lxi'];
+    }
+    else if(s2.value == "sx4"){
+        var optionArray1 = ['--SELECT--','vdi', 'zxi at leather bs-iv', 'zxi mt leather bs-iv', 'zxi at bs-iv', 'zdi leather', 'zxi mt bs-iv', 'zdi o', 'zxi', 'zdi', 'vxi'];
+    }
+    else if(s2.value == "wagon r"){
+        var optionArray1 = ['--SELECT--','lx minor', 'vxi minor', 'vxi with abs minor', 'duo lxi lpg', 'lxi minor', 'duo lx lpg', 'ax minor'];
+    }
+    else if(s2.value == "wagon r 1.0"){
+        var optionArray1 = ['--SELECT--','lxi cng', 'lxi lpg', 'vxi abs airbag', 'lxi cng o', 'lx', 'vxi amt o', 'vxi amt', 'vxi', 'vxi abs', 'lxi', 'lxi abs'];
+    }
+    else if(s2.value == "duster"){
+        var optionArray1 = ['--SELECT--','110 ps rxz diesel o', '85 ps rxl diesel', '85 ps rxe diesel', 'adventure edition 85 ps rxl 4x2 mt', '110 ps rxz plus', '110 ps rxz awd diesel', '85 ps rxl', '110 ps rxl 4x2 amt', '110 ps rxl awd', '85 ps rxl diesel plus', '110 ps rxl adventure', '85 ps rxe', 'rxs cvt', '110 ps rxz diesel', '85 ps rxe diesel adventure', '85 ps rxl diesel o', 'rxl petrol', '110 ps rxl explore le', '110 ps rxl diesel', 'rxe petrol', '110 ps rxz diesel plus', '110 ps rxl awd diesel'];
+    }
+    else if(s2.value == "kwid"){
+        var optionArray1 = ['--SELECT--','1.0 rxt o', '1.0 rxt amt o', 'rxl edition', 'rxt', 'climber 1.0 amt', 'rxt edition', '1.0 rxl', 'climber 1.0', '1.0 rxl edition', '1.0 rxt', '1.0 rxl amt', '1.0 rxt edition', 'rxl', 'rxt o'];
+    }
+    else if(s2.value == "rapid"){
+        var optionArray1 = ['--SELECT--','1.6 ultima elegance mpi at', 'ambition 1.6 tdi cr mt', 'leisure 1.6 mpi at', 'active 1.6 tdi cr mt', 'ambition 1.6 mpi at plus', '1.5 tdi cr elegance black package at', '1.6 mpi ambition mt', '1.6 mpi style at', 'elegance 1.6 mpi mt', '1.5 tdi cr ambition at', '1.5 tdi cr active', 'elegance 1.6 mpi at', '1.5 tdi cr ambition plus', 'active 1.6 tdi cr mt plus', 'ambition 1.6 tdi cr mt plus', '1.5 tdi cr elegance', 'ambition 1.6 mpi mt plus', '1.5 tdi cr ambition', '1.5 tdi cr elegance black package', '1.5 tdi cr elegance at', '1.5 tdi cr ambition plus at', 'style 1.5 tdi', 'style 1.5 tdi at', '1.6 mpi active', '1.5 tdi cr style plus at', '1.6 mpi elegance black package at', 'ambition 1.6 mpi at', 'style 1.6 mpi', '1.5 tdi cr style plus', 'elegance 1.6 tdi cr mt', '1.6 mpi style plus at'];
+    }
+    else if(s2.value == "tiago"){
+        var optionArray1 = ['--SELECT--','revotorq xe', 'revotron xza', 'revotorq xm', 'revotron xta', 'revotron xe', 'revotorq xt o', 'revotron xt', 'revotron xz', 'revotorq xz', 'revotron xm', 'revotorq xt', 'wizz edition petrol'];
+    }
+    else if(s2.value == "etios"){
+            var optionArray1 = ['--SELECT--','vd', 'g', 'j', 'gd', 'xclusive diesel', 'vx-d', 'vxd', 'gd sp', 'vx', 'v', 'vxd xclusive', 'g sp', 'xclusive petrol'];
+    }
+    else if(s2.value == "etios liva"){
+            var optionArray1 = ['--SELECT--','vd', 'g', 'gd', 'xclusive diesel', 'trd sportivo petrol ltd', 'trd sportivo diesel', 'vxd', 'gd sp', 'vx', 'gx', 'vx dual tone', 'v', 'g sp', 'v dual tone'];
+    }
+    else if(s2.value == "innova"){
+            var optionArray1 = ['--SELECT--','2.0 vx 7 str bs-iv', '2.5 gx 7 str bs-iv', '2.0 v', '2.5 v 7 str', '2.0 g4', '2.5 v 8 str', '2.5 g4 7 str', 'aero ltd 7 str bs-iv', '2.5 gx 8 str bs-iv ltd', '2.5 ev ps 7 str bs-iv', '2.5 g1 bs-iv', '2.5 g 7 str bs-iv', '2.0 gx 8 str bs-iv', '2.5 gx 7 str bs-iv ltd', '2.5 g 8 str bs-iv', '2.0 g 8 str bs-iv', '2.0 vx 8 str bs-iv', '2.5 g4 8 str', '2.5 gx 8 str bs-iv'];
+    }
+    else if(s2.value == "polo"){
+            var optionArray1 = ['--SELECT--','comfortline 1.2l d', 'gt tdi', 'highline exquisite p', 'comfortline 1.2l p', 'trendline 1.2l p', 'highline plus 1.0 (p) connect edition', 'gt tsi', 'highline 1.2l p', 'highline 1.5l d', 'allstar 1.2 p', 'highline 1.6l p', 'gt tsi sport', 'allstar 1.5 d', 'comfortline 1.5l d', 'highline 1.2l d', 'trendline 1.5l d', 'trendline 1.2l d', 'gt tdi sport', 'sr 1.2l p'];
+    }
+    else if(s2.value == "vento"){
+            var optionArray1 = ['--SELECT--','petrol style', 'highline petrol at', 'highline 1.2 petrol at', 'tsi', 'trendline petrol', 'comfortline diesel at', 'highline 1.5 diesel', 'comfortline diesel', 'comfortline petrol at', 'comfortline petrol', 'highline diesel at', 'highline petrol'];
+    }
+
+	for(var option in optionArray1){
+		var newOption1 = document.createElement("option");
+		newOption1.value = optionArray1[option];
+		newOption1.innerHTML = optionArray1[option];
+		s3.options.add(newOption1);
+	}
+    }
+
+
+</script>
+</head>
+<body>
+{%if request.method=="GET"%}
+<h2>Choose Your Car Details</h2>
+<hr />
+<form action="/" method="POST" >
+Choose Car Make:
+<select id="slct1" name="make" onchange="populate(this.id,'slct2')">
+  <option value="">--SELECT--</option>
+  <option value="ford">ford</option>
+  <option value="honda">honda</option>
+  <option value="hyundai">hyundai</option>
+  <option value="mahindra">mahindra</option>
+  <option value="maruti suzuki">maruti suzuki</option>
+  <option value="renault">renault</option>
+  <option value="skoda">skoda</option>
+  <option value="tata">tata</option>
+  <option value="toyota">toyota</option>
+  <option value="volkswagen">volkswagen</option>
+
+</select>
+<hr />
+Choose Car Model:
+<select id="slct2" name="model" onchange="populate12(this.id,'slct3')"></select>
+<hr />
+Choose Car Variant:
+<select id="slct3" name="variant"></select>
+<hr />
+Choose Car Color:
+<select id="slct4" name="color">
+<option value="">--SELECT--</option>
+  <option value="bronze">bronze</option>
+  <option value="orange">orange</option>
+  <option value="blue">blue</option>
+  <option value="purple">purple</option>
+  <option value="star dust">star dust</option>
+  <option value="brown">brown</option>
+  <option value="silver">silver</option>
+  <option value="green">green</option>
+  <option value="red">red</option>
+  <option value="white">white</option>
+  <option value="beige">beige</option>
+  <option value="pearl">pearl</option>
+  <option value="gold">gold</option>
+  <option value="maroon">maroon</option>
+  <option value="grey">grey</option>
+  <option value="yellow">yellow</option>
+  <option value="black">black</option>
+</select>
+<hr />
+Choose City:
+<select id="slct5" name="city">
+<option value="">--SELECT--</option>
+  <option value="mumbai">mumbai</option>
+  <option value="bangalore">bangalore</option>
+  <option value="delhi">delhi</option>
+  <option value="gurugram">gurugram</option>
+  <option value="hyderabad">hyderabad</option>
+</select>
+<hr />
+Age:
+<input type="number" name="age" min="1" max="5">
+<hr />
+Owners:
+<input type="number" name="owners" min="1" max="5">
+<hr />
+Choose Fuel Type:
+<select id="slct6" name="fuel_type">
+<option value="">--SELECT--</option>
+  <option value="cng">cng</option>
+  <option value="diesel">diesel</option>
+  <option value="lpg">lpg</option>
+  <option value="petrol">petrol</option>
+</select>
+<hr />
+Kms Run:
+<input type="number" name="kms_run" min="0" max="600000">
+<hr />
+Choose Transmission:
+<select id="slct7" name="transmission">
+<option value="">--SELECT--</option>
+  <option value="automatic">automatic</option>
+  <option value="manual">manual</option>
+</select>
+<hr />
+Ex-showroom Price:
+<input type="number" name="ex_showroom_price" min="1" max="1000000000">
+<hr />
+<input type="submit" name="submit">
+
+{%else%}
+<h3>Your car's depriciation factor is {{result}}</h3>
+{%endif%}
+</form>
+</body>
+</html>
