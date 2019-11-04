@@ -12,11 +12,11 @@ Although the pipeline prepared was subject to give batch predictions of scraped 
 
 #Steps to run the project onto your system
 
-1.) Create a virtual environment and install dependencies mentioned in requirements.txt
+1.) Create a virtual environment and install dependencies mentioned in requirements.txt, create trained_models directory in oto_model and in api directory
 
-2.) Run train_pipeline.py to train the model
+2.) Extract the rar datafiles in the datasets directory. Now run train_pipeline.py to train the model
 
-3.) The model and preprocessing pickle files would be discovered in trained_models directory copy the files into the trained_models directory in the api folder to get predictions via app
+3.) The model and preprocessing pickle files would be discovered in trained_models directory, copy the files into the trained_models directory in the api folder to get predictions via app
 
 4.) Now set FLASK_APP=app
 
