@@ -20,7 +20,6 @@ def run_training() -> None:
     popularity = load_dataset(file_name=config.POPULARITY)
     valuation = load_dataset(file_name=config.IDV_VALUATION)
     use_final_grid = load_dataset(file_name=config.MARGIN_DIVISION)
-    data = load_dataset(file_name=config.DATA_FOR_TRAINING)
 
     carwale = pipeline.carwale_pp.transform(carwale)
     idv = pipeline.idv_pp.transform(idv)
